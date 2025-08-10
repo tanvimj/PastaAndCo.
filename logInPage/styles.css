@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Onest", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #353b12;
+}
+
+.container {
+  z-index: 1111;
+  scale: 1.2;
+  position: relative;
+  width: 900px;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+.slide-wrapper {
+  display: flex;
+  width: 200%;
+  height: 100%;
+  transition: transform 0.8s ease-in-out;
+}
+
+.container.active .slide-wrapper {
+  transform: translateX(-50%);
+}
+
+.panel {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  scale: 0.95;
+  border-radius: 25px;
+}
+
+.image-panel {
+  flex: 1;
+}
+
+.image-panel-left {
+  flex: 1;
+  background: url("slide1.jpg") no-repeat center/cover;
+}
+
+.image-panel-right {
+  flex: 1;
+  background: url("slide2.avif") no-repeat
+    center/cover;
+}
+
+.form-panel {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.935);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.form-panel h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #486504;
+}
+
+.form-panel input {
+  width: 80%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: #ffffff;
+}
+
+@keyframes slideUpFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-panel button {
+  transform: translateX(-50%);
+  background: linear-gradient(to right, #efc135, #d8ab23);
+  color: white;
+  padding: 10px 130px;
+  margin: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border-radius: 15px;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(114, 159, 5, 0.3);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideUpFadeIn 1.2s ease-out 0.1s forwards;
+  transition: transform 0.15s ease;
+}
+
+.form-panel button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: white;
+  transition: left 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: -1;
+}
+
+.form-panel button:hover {
+  transform: translateX(-50%) translateY(0px);
+  box-shadow: 2px 12px 35px rgba(113, 159, 5, 0.068);
+  color: #efc135;
+}
+
+.form-panel button:hover::before {
+  left: 0;
+}
+
+.form-panel button:active {
+  transform: translateX(-50%) scale(0.9);
+}
+
+.form-panel p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: black;
+}
+
+.form-panel span {
+  color: #353b12;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.img1 {
+  position: absolute;
+  top: 10%;
+  right: 6%;
+  height: 32%;
+}
+
+.img2 {
+  z-index: 11;
+  position: absolute;
+  top: 66%;
+  left: 11%;
+  height: 11%;
+  transform: rotate(90deg);
+}
+
+.img3 {
+  z-index: 11;
+  position: absolute;
+  top: 70%;
+  left: 11%;
+  height: 11%;
+  transform: rotate(70deg);
+}
+
+.img4 {
+  z-index: 11;
+  position: absolute;
+  top: 74%;
+  left: 11%;
+  height: 11%;
+  transform: rotate(60deg);
+}
+
+.img5 {
+  position: absolute;
+  top: 69%;
+  left: 7%;
+  height: 32%;
+  transform: rotate(220deg);
+}
