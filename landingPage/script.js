@@ -5,7 +5,6 @@ hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("open");
 });
 
-// Improved scroll animation
 document.addEventListener("DOMContentLoaded", function () {
   const elementsToAnimate = [
     { id: "latestInTown", animated: false },
@@ -35,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Throttle scroll events for better performance
   let ticking = false;
   function requestTick() {
     if (!ticking) {
@@ -47,19 +45,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Listen for scroll events
   window.addEventListener("scroll", requestTick);
 
-  // Check on page load
   checkScroll();
 });
 
-// Order button functionality
 document.querySelector(".orderNow").addEventListener("click", function () {
   alert("Order functionality would be implemented here!");
 });
 
 document.querySelector(".ordernow").addEventListener("click", function () {
-  window.location.href = "../LoginPage/index.html"; // Change to your file path
+  window.location.href = "../LoginPage/index.html"; 
 });
 
