@@ -55,6 +55,6 @@ document.querySelector(".orderNow").addEventListener("click", function () {
 });
 
 document.querySelector(".ordernow").addEventListener("click", function () {
-  window.location.href = "../LogInPage/index.html"; 
+  window.location.href = "landingPage/index.html"; 
 });
 
