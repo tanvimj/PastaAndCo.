@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Pasta & Co.</title>
+    <style></style>
+  </head>
+  <body>
+    <div>
+      <img class="bg" src="BG.png" alt="" />
+      <nav class="navbar">
+        <div class="nav-brand">
+          <h3>Pasta & Co.</h3>
+        </div>
+
+        <div class="nav-item active" data-category="pasta">
+          <a href="#" class="nav-link">
+            <div class="nav-icon">
+              <img src="pastaIcon.png" alt="" />
+            </div>
+            <span class="nav-text">Pasta</span>
+          </a>
+        </div>
+
+        <div class="nav-item" data-category="sides">
+          <a href="#" class="nav-link">
+            <div class="nav-icon">
+              <img src="sideIcon.png" alt="" />
+            </div>
+            <span class="nav-text">Sides</span>
+          </a>
+        </div>
+
+        <div class="nav-item" data-category="desserts">
+          <a href="#" class="nav-link">
+            <div class="nav-icon">
+              <img src="dessertIcon.png" alt="" />
+            </div>
+            <span class="nav-text">Desserts</span>
+          </a>
+        </div>
+
+        <div class="nav-item" data-category="pizza">
+          <a href="#" class="nav-link">
+            <div class="nav-icon">
+              <img src="pizzaIcon.png" alt="" />
+            </div>
+            <span class="nav-text">Pizza</span>
+          </a>
+        </div>
+
+        <div class="nav-divider"></div>
+
+        <div class="nav-item" data-category="specials">
+          <a href="#" class="nav-link">
+            <div class="nav-icon">
+              <img src="specialsIcon.png" alt="" />
+            </div>
+            <span class="nav-text">Specials</span>
+          </a>
+        </div>
+
+        <div class="nav-item" data-category="drinks">
+          <a href="#" class="nav-link">
+            <div class="nav-icon">
+              <img src="drinkIcon.png" alt="" />
+            </div>
+            <span class="nav-text">Drinks</span>
+          </a>
+        </div>
+
+        <div class="nav-divider"></div>
+
+        <div class="nav-item secondary" data-category="offers">
+          <a href="#" class="nav-link">
+            <div class="nav-icon">
+              <img src="offerIcon.png" alt="" />
+            </div>
+            <span class="nav-text">Offers</span>
+          </a>
+        </div>
+
+        <div class="nav-item secondary" data-category="locations">
+          <a href="#" class="nav-link">
+            <div class="nav-icon">
+              <img src="locationsIcon.png" alt="" />
+            </div>
+            <span class="nav-text">Locations</span>
+          </a>
+        </div>
+      </nav>
+      <div class="food-panel">
+        <div id="foodContent" class="food-panel-content">
+          <div class="food-item">
+            <img src="${item.image}" alt="${item.name}" class="food-item-img" />
+            <div class="food-item-header">
+              <div>
+                <div class="food-item-name">${item.name}</div>
+              </div>
+              <div class="food-item-price">${item.price}</div>
+            </div>
+            <div class="food-item-description">${item.description}</div>
+            <div class="food-item-tags">${tagsHTML}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
