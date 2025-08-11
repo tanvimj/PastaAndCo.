@@ -443,7 +443,6 @@ const foodData = {
   },
 };
 
-// Function to render food items
 function renderFoodItems(category) {
   const data = foodData[category];
   const contentDiv = document.getElementById("foodContent");
@@ -510,13 +509,11 @@ navItems.forEach((item) => {
 
     this.classList.add("active");
 
-    // Get category and render food items
     const category = this.getAttribute("data-category");
     renderFoodItems(category);
   });
 });
 
-// Handle secondary nav items too
 const allNavItems = document.querySelectorAll(".nav-item");
 allNavItems.forEach((item) => {
   if (!item.classList.contains("secondary")) return;
@@ -526,7 +523,6 @@ allNavItems.forEach((item) => {
 
     navItems.forEach((navItem) => navItem.classList.remove("active"));
 
-    // Get category and render food items
     const category = this.getAttribute("data-category");
     renderFoodItems(category);
   });
