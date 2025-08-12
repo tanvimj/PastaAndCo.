@@ -624,7 +624,7 @@ function renderFoodItems(category) {
         `;
 }
 
-// NAVBAR TWEAKS THIS STAY AS IT IS DO NOT TOUCH
+// NAVBAR TWEAKS THIS STAYS AS IT IS DO NOT TOUCH
 const navItems = document.querySelectorAll(".nav-item:not(.secondary)");
 
 navItems.forEach((item) => {
