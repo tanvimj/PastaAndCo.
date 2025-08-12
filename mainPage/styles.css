@@ -364,7 +364,6 @@ body {
   opacity: 0.8;
 }
 
-/* Panel fade animation */
 .food-panel-content {
   animation: fadeIn 0.4s ease;
 }
