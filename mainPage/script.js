@@ -242,7 +242,7 @@ const foodData = {
         name: "Antipasto Platter",
         price: "$16.99",
         description:
-          " A chef’s selection of cured meats, artisanal cheeses, olives, and roasted vegetables, perfect for sharing",
+          "A chef’s selection of cured meats, artisanal cheeses, olives, and roasted vegetables, perfect for sharing",
         tags: ["sharing", "popular"],
         image: "side10.png",
       },
@@ -307,29 +307,99 @@ const foodData = {
     subtitle: "Crispy thin crust pizzas from our stone oven",
     items: [
       {
-        name: "Margherita",
+        name: "Margherita Classico",
+        price: "$13.99",
+        description:
+          "A timeless Italian classic with fresh mozzarella, tangy tomato sauce, and fragrant basil.",
+        tags: ["vegetarian", "traditional", "popular"],
+        image: "pizza1.png",
+      },
+      {
+        name: "Pepperoni Feast",
         price: "$14.99",
         description:
-          "San Marzano tomatoes, fresh mozzarella, basil, and olive oil",
+          "Generously loaded with spicy pepperoni slices over a golden cheese base.",
+        tags: ["classic", "traditional", "popular"],
+        image: "pizza2.png",
+      },
+      {
+        name: "Veggie Supreme",
+        price: "$14.49",
+        description:
+          "A colorful medley of capsicum, onions, mushrooms, and olives on rich tomato sauce.",
+        tags: ["vegetarian", "traditional", "garden-fresh"],
+        image: "pizza3.png",
+      },
+      {
+        name: "Chicken BBQ Blaze",
+        price: "$15.99",
+        description:
+          "Smoky BBQ chicken chunks with onions, sweet corn, and a hint of paprika.",
+        tags: ["smoky", "popular"],
+        image: "pizza4.png",
+      },
+      {
+        name: " Four Cheese Indulgence",
+        price: "$14.49",
+        description:
+          "A creamy blend of mozzarella, cheddar, gouda, and parmesan for cheese lovers.",
+        tags: ["vegetarian", "cheesy", "popular"],
+        image: "pizza5.png",
+      },
+      {
+        name: "Hawaiian Paradise",
+        price: "$14.79",
+        description:
+          "A sweet and savory combo of chicken, pineapple, and cheese on a light tomato base.",
+        tags: ["tropical", "classic"],
+        image: "pizza6.png",
+      },
+      {
+        name: "Spicy Paneer Tikka",
+        price: "$14.00",
+        description:
+          "Marinated paneer cubes with onions, capsicum, and bold Indian spices.",
+        tags: ["vegetarian", "fusion", "spicy"],
+        image: "pizza7.png",
+      },
+      {
+        name: "Seafood Delight",
+        price: "$15.99",
+        description:
+          "Shrimps, squid, and clams paired with herbs and garlic butter drizzle.",
+        tags: ["seafood", "traditional", "premium"],
+        image: "pizza8.png",
+      },
+      {
+        name: "Meat Lover’s Overload ",
+        price: "$15.49",
+        description:
+          "Packed with chicken, ham, pepperoni, and sausage for the ultimate carnivore feast.",
+        tags: ["heavy", "traditional", "popular"],
+        image: "pizza9.png",
+      },
+      {
+        name: "Garden Pesto",
+        price: "$11.99",
+        description:
+          "Fresh vegetables with a fragrant basil pesto sauce and a sprinkle of parmesan.",
+        tags: ["vegetarian", "traditional", "fresh"],
+        image: "pizza10.png",
+      },
+      {
+        name: "Deluxe Meat & Olive Pizza",
+        price: "$14.99",
+        description:
+          "SA savory mix of meats, olives, and fresh basil on a classic pizza base.",
+        tags: ["traditional", "popular"],
+        image: "pizza11.png",
+      },
+      {
+        name: "Margherita Pt. II",
+        price: "$14.99",
+        description: "Margherita but better.",
         tags: ["vegetarian", "traditional", "popular"],
-      },
-      {
-        name: "Pepperoni Classic",
-        price: "$17.99",
-        description: "Tomato sauce, mozzarella, and premium pepperoni",
-        tags: ["popular", "classic"],
-      },
-      {
-        name: "Quattro Stagioni",
-        price: "$19.99",
-        description: "Four sections: mushrooms, ham, artichokes, and olives",
-        tags: ["premium", "traditional"],
-      },
-      {
-        name: "Diavola",
-        price: "$18.99",
-        description: "Spicy salami, chili flakes, and mozzarella",
-        tags: ["spicy", "bold"],
+        image: "pizza12.png",
       },
     ],
   },
@@ -338,24 +408,52 @@ const foodData = {
     subtitle: "Chef's featured dishes and seasonal favorites",
     items: [
       {
-        name: "Lobster Ravioli",
-        price: "$28.99",
+        name: "Osso Buco alla Milanese",
+        price: "$20.99",
         description:
-          "House-made ravioli filled with fresh lobster in champagne cream sauce",
-        tags: ["premium", "special", "seafood"],
+          "Slow-braised veal shanks in white wine and vegetables, finished with zesty gremolata.",
+        tags: ["premium", "special", "hearty"],
+        image: "special1.png",
       },
       {
-        name: "Osso Buco",
-        price: "$32.99",
-        description: "Braised veal shanks with saffron risotto and gremolata",
-        tags: ["premium", "traditional"],
+        name: "Arancini di Riso",
+        price: "$11.99",
+        description:
+          "Golden-fried risotto balls with ragù, mozzarella, and peas inside.",
+        tags: ["vegetarian", "special", "classic"],
+        image: "special2.png",
       },
       {
-        name: "Chef's Tasting Menu",
-        price: "$55.99",
+        name: "Vitello Tonnato",
+        price: "$19.99",
         description:
-          "Five-course journey through our finest dishes paired with wine",
-        tags: ["premium", "experience"],
+          "Chilled veal slices topped with a creamy tuna-caper sauce.",
+        tags: ["premium", "special", "creamy"],
+        image: "special3.png",
+      },
+      {
+        name: "Saltimbocca alla Romana",
+        price: "$22.99",
+        description:
+          "Veal wrapped in prosciutto and sage, pan-cooked in wine and butter.",
+        tags: ["premium", "special", "roman"],
+        image: "special4.png",
+      },
+      {
+        name: "Fritto Misto di Mare",
+        price: "$19.49",
+        description:
+          "Lightly battered and fried seafood mix with lemon and herbs.",
+        tags: ["seafood", "special", "coastal"],
+        image: "special5.png",
+      },
+      {
+        name: "Melanzane alla Parmigiana",
+        price: "$18.99",
+        description:
+          "Baked layers of eggplant, tomato sauce, mozzarella, and parmesan.",
+        tags: ["vegetarian", "special", "baked"],
+        image: "special6.png",
       },
     ],
   },
@@ -364,28 +462,50 @@ const foodData = {
     subtitle: "Carefully selected wines, cocktails, and refreshments",
     items: [
       {
-        name: "House Wine",
+        name: " Limoncello Spritz",
         price: "$7.99",
-        description: "Red or white wine selection by the glass",
-        tags: ["wine", "popular"],
+        description:
+          "Sparkling prosecco with tangy limoncello and a splash of soda.",
+        tags: ["refreshing", "alcoholic"],
+        image: "drink1.jpeg",
+      },
+      {
+        name: "Bellini",
+        price: "$8.99",
+        description:
+          "Peach purée blended with prosecco for a sweet, bubbly treat.",
+        tags: ["fruity", "popular"],
+        image: "drink2.png",
+      },
+      {
+        name: "Negroni",
+        price: "$9.99",
+        description:
+          "A bold mix of gin, Campari, and sweet vermouth — bitter yet sophisticated.",
+        tags: ["alcoholic", "strong", "popular"],
+        image: "drink3.jpeg",
+      },
+      {
+        name: "Aperol Spritz",
+        price: "$7.99",
+        description: "Aperol, prosecco, and soda water with a slice of orange.",
+        tags: ["alcoholic", "light", "popular"],
+        image: "drink4.jpeg",
       },
       {
         name: "Italian Soda",
-        price: "$3.99",
-        description: "Sparkling water with your choice of fruit syrup",
-        tags: ["refreshing", "non-alcoholic"],
+        price: "$4.99",
+        description:
+          "Flavored soda with fruity syrups like strawberry, peach, or raspberry.",
+        tags: ["fruity", "popular"],
+        image: "drink5.jpeg",
       },
       {
-        name: "Espresso",
-        price: "$2.99",
-        description: "Rich, dark roast Italian coffee",
-        tags: ["coffee", "traditional"],
-      },
-      {
-        name: "Limoncello",
-        price: "$6.99",
-        description: "Traditional Italian lemon liqueur, served chilled",
-        tags: ["digestif", "traditional"],
+        name: "Espresso Macchiatoe",
+        price: "$7.99",
+        description: "Bold Italian espresso topped with a spot of foamed milk.",
+        tags: ["coffee", "popular"],
+        image: "drink6.jpeg",
       },
     ],
   },
@@ -397,22 +517,25 @@ const foodData = {
         name: "Family Feast",
         price: "$49.99",
         description:
-          "Large pizza, pasta dish, salad, and dessert for four people",
+          "A hearty spread with large pizza, pasta, salad, and dessert made for sharing with the whole family.",
         tags: ["family", "value", "popular"],
+        image: "offer1.jpeg",
       },
       {
-        name: "Date Night Special",
+        name: "Brunch Date Bliss",
         price: "$39.99",
         description:
-          "Two pasta dishes, shared appetizer, and bottle of house wine",
+          "A charming midday set with two pasta dishes, a shared appetizer, and a bottle of house wine for the perfect daytime date.",
         tags: ["romantic", "wine"],
+        image: "offer2.jpeg",
       },
       {
-        name: "Lunch Express",
-        price: "$12.99",
+        name: "Twilight Table",
+        price: "$49.99",
         description:
-          "Any pasta dish with soup or salad, available weekdays 11am-3pm",
+          "A relaxed evening combo featuring any pasta dish paired with your choice of soup or salad, plus a soft drink.",
         tags: ["lunch", "quick", "value"],
+        image: "offer3.jpeg",
       },
     ],
   },
@@ -425,6 +548,7 @@ const foodData = {
         price: "Open Daily",
         description: "123 Main Street, Downtown • (555) 123-4567 • 11am - 10pm",
         tags: ["downtown", "parking"],
+        image: "location1.jpeg",
       },
       {
         name: "Waterfront Branch",
@@ -432,12 +556,14 @@ const foodData = {
         description:
           "456 Harbor View, Marina District • (555) 234-5678 • 11am - 11pm",
         tags: ["waterfront", "scenic"],
+        image: "location3.jpeg",
       },
       {
         name: "Suburban Spot",
         price: "Open Daily",
         description: "789 Oak Avenue, Oakville • (555) 345-6789 • 11am - 9pm",
         tags: ["family-friendly", "parking"],
+        image: "location2.jpeg",
       },
     ],
   },
@@ -498,7 +624,7 @@ function renderFoodItems(category) {
         `;
 }
 
-// NAVBAR TWEAKS - Your original code preserved
+// NAVBAR TWEAKS THIS STAY AS IT IS DO NOT TOUCH
 const navItems = document.querySelectorAll(".nav-item:not(.secondary)");
 
 navItems.forEach((item) => {
